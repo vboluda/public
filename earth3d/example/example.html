@@ -79,6 +79,7 @@
            
             var dialog=new controlDialog();
             dialog.whenClose=function(){
+                alert("IP addresses have been partially hidden to avoid legal issues")
                 var element = document.body;
                 element.addEventListener('resize', onWindowResize, false);
                 element.addEventListener('mousemove', onMouseMove, false);
