@@ -39,9 +39,14 @@ function controlDialog() {
 //    }
 
 // When the user clicks on <span> (x), close the modal
-    this.span.onclick = function () {
-         _this.modal.style.display = "none";
-         _this.whenClose();
+    // this.span.onclick = function () {
+    //      _this.modal.style.display = "none";
+    //      _this.whenClose();
+    // }
+
+    this.modal.onclick=function(){
+        _this.modal.style.display = "none";
+        _this.whenClose();
     }
 
 // When the user clicks anywhere outside of the modal, close it
