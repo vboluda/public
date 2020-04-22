@@ -4,12 +4,13 @@ function showLabel(obj, px, py) {
         'Country: ' + obj.properties.name,
         'COVID19 Cases: ' + (!obj.cases ? 'no data' : obj.cases),
         'COVID19 Deaths: ' + (!obj.data.deaths ? 'no data' : obj.data.deaths),
+        'COVID19 Recovered: ' + (!obj.data.recovered ? 'no data' : obj.data.recovered),
         'COVID19 Active: ' + (!obj.data.active ? 'no data' : obj.data.active),
     ];
     if (obj.nombre == "indefined") {
         texto = ['NO DATA'];
     }
-    var canvas = makeTextSprite(texto, {fontsize: 24,
+    var canvas = makeTextSprite(texto, {fontsize: 18,
         borderThickness: 5,
         borderColor: {r: 130, g: 94, b: 53, a: 1},
         backgroundColor: {r: 240, g: 182, b: 116, a: 0.7},
